@@ -1,0 +1,39 @@
+<?php
+    $image_id = get_option('myprefix_image_id');
+
+    if ( isset($_POST['myprefix_image_id']) ){
+        $image = $_POST['myprefix_image_id'];
+        update_option( 'myprefix_image_id', $image );
+    }
+    
+    var_dump($image_id);
+    var_dump($image);?>
+    <form action="" method="POST" enctype="multipart/form-data">
+        <input type="text" name='myprefix_image_id' id='myprefix_image_id' value='<?= esc_attr($image_id)?>' class="regular-text"/>
+        <input type="button" class="button-primary" value="<?php esc_attr_e( 'Sélectionner une image' )?>" id="myprefix_media_manager"/>
+        <button>Valider</button>
+    </form>
+<?php
+
+
+
+<?php
+    $image_id = get_option('myprefix_image_id');
+    if ( intval( $image_id) > 0 ) {
+        $image = wp_get_attachment_image($image_id, 'medium', false, [ 'id' => 'myprefix-preview-image'] );
+    }else {
+        $image = '<p>Image Not Found </p>';
+    }
+
+    // if ( ! get_option('myprefix_image_id') ) {
+    //     $image_id_save = add_option('myprefix_image_id');
+    // } else {
+    //     $image_id_save = update_option( 'myprefix_image_id', $image_id );
+    // }
+    echo $image;
+    
+    var_dump($image_id);?>
+    <input type="text" name='myprefix_image_id' id='myprefix_image_id' value='<?= esc_attr($image_id)?>' class="regular-text"/>
+    <input type="button" class="button-primary" value="<?php esc_attr_e( 'Sélectionner une image' )?>" id="myprefix_media_manager"/>
+<?php
+// update_option( 'myprefix_image_id', $image_id );

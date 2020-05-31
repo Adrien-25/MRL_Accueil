@@ -1,0 +1,11 @@
+#video{
+    width:67%;
+    height:85%;
+    transform: translate(-145%, 10%);
+    position: absolute;
+}
+
+.video-container{
+    position: relative;
+    width: 100%;
+}

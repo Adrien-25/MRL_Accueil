@@ -1,0 +1,14 @@
+.tetaisla-container{
+    position: relative;
+    width: 100%;
+}
+
+.tetaisla-img{
+    cursor: pointer;
+    width:55%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    transform: translate(40%, -140%);
+    position: absolute;
+}

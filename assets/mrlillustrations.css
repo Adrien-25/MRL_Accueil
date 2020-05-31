@@ -1,0 +1,11 @@
+.illustrations-container{
+    position: relative;
+    width: 100%;
+}
+
+.illustrations-img{
+    cursor: pointer;
+    width:56%;
+    transform: translate(38%, -139%);
+    position: absolute;
+}

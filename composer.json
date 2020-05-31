@@ -1,0 +1,17 @@
+{
+    "name": "toto/MRL-Accueil",
+    "description": "Pugin Accueil",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "KetchupLardon",
+            "email": "axel.gudolle@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"Inc\\": "./Inc"}
+    }
+}

@@ -1,0 +1,17 @@
+.auditeurs-row{
+    width:50%;
+    transform: translate(10%, -140%);
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+.auditeurs-col-3 {
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+    font-size: 0.6vmax;
+    text-align: center;
+    position: relative;
+}

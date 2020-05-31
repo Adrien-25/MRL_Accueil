@@ -1,0 +1,30 @@
+.dons-container{
+    position: relative;
+    width: 100%;
+}
+
+.dons-position-txt{
+    width:50%;
+    top:50%;
+    left:5%;
+    /* transform: translate(10%, -140%); */
+    position: absolute;
+}
+
+.don-img-txt{
+    display: flex;
+    flex-direction: row;
+    color:white;
+}
+
+.don-img{
+    padding:3%;
+    width: 20%;
+}
+
+.don-txt{
+    display: flex;
+    align-items: center;
+    padding:3%;
+    font-size: 0.8vmax;
+}

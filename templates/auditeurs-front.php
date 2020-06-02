@@ -1,6 +1,7 @@
 <?php
-$db = dbConnect();
-$req = $db-> query('SELECT nom, ville, img FROM auditeurs_membres ORDER BY RAND() LIMIT 4') ;
+
+use \Inc\Base\DataBase;
+$req = DataBase::auditeurs_query();
 ?>
 <div class="">
         <img src="<?= plugin_dir_url( dirname( __FILE__) ).'assets/Images/Auditeurs/Fond_jp.jpg'?>" alt="BEST OF 1">

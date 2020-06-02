@@ -71,7 +71,7 @@
                 <h2><?= $product_number[$i] ?></h2>
                 <?= $image_saved[$i] ?>
                 <p>Image du produit</p>
-                <input type="text" name='myprefix_image_id[]' id='<?= $my_prefix_image[$i] ?>' value='<?= esc_attr($image_id[$i])?>' class="regular-text"/>
+                <input type="hidden" name='myprefix_image_id[]' id='<?= $my_prefix_image[$i] ?>' value='<?= esc_attr($image_id[$i])?>' class="regular-text"/>
                 <input type="button" class="button-primary" value="<?php esc_attr_e( 'Sélectionner une image' )?>" id="<?= $myprefix_media_manager[$i] ?>"/>
                 <p>Lien du produit vers la boutique</p>
                 <input type="text" name='myprefix_link[]' value='<?= esc_attr($link[$i])?>' class="regular-text"/>
@@ -81,9 +81,8 @@
                 <input type="text" name='myprefix_prix[]' value='<?= esc_attr($price[$i])?>' class="regular-text"/>
             </div>
         <?php endfor ?>
-        
     </div>
-        <button class="boutique-save">Enregistrer</button>
+        <button class="boutique-save" style="padding:5px;background-color:lightblue;">Enregistrer</button>
     </form>
 <?php
 

@@ -40,5 +40,6 @@ class BaseController
         return isset($option[$key]) ? $option[$key] : false;
 
     }
+
 }
 ;

@@ -1,18 +1,7 @@
 <?php 
-function dbConnect(){ 
-        try
-        {
-                $db = new PDO('mysql:host=localhost;dbname=wordpress4', 'root', 'toto');
-                return $db;
-        }
-        catch(Exception $e)
-        {
-                die('Erreur : '.$e->getMessage());
-        }
-}
 
-$db = dbConnect();
-$req = $db-> query('SELECT nom, ville FROM auditeurs_membres ORDER BY RAND() LIMIT 3') ;
+use \Inc\Base\DataBase;
+$req = DataBase::dons_query();
 
 ?>
 <div class="dons-container">

@@ -11,9 +11,10 @@ class DataBase
 {  
     
     public static function dbConnect(){ 
+        $credentials = (include('dbcredentials.php'));
         try
         {
-                $db = new PDO('mysql:host=localhost;dbname=wordpress4', 'root', 'toto', [
+                $db = new PDO($credentials['dsn'], $credentials['user'], $credentials['password'], [
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                     PDO::ATTR_ERRMODE => PDO::FETCH_ASSOC
                 ]);
@@ -33,7 +34,7 @@ class DataBase
 
     public static function auditeurs_query(){
         $db = self::dbConnect();
-        $req = $db-> query('SELECT nom, ville, img FROM auditeurs_membres ORDER BY RAND() LIMIT 4') ;
+        $req = $db-> query('SELECT nom, ville, image FROM auditeurs_membres ORDER BY RAND() LIMIT 4') ;
         return $req;
     }
 

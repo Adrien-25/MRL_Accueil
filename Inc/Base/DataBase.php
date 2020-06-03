@@ -14,7 +14,8 @@ class DataBase
         try
         {
                 $db = new PDO('mysql:host=localhost;dbname=wordpress4', 'root', 'toto', [
-                    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+                    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                    PDO::ATTR_ERRMODE => PDO::FETCH_ASSOC
                 ]);
                 return $db;
         }

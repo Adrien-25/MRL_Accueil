@@ -34,6 +34,7 @@ class DataBase
 
     public static function auditeurs_query(){
         $db = self::dbConnect();
+        var_dump($db);
         $req = $db-> query('SELECT nom, ville, image FROM auditeurs_membres ORDER BY RAND() LIMIT 4') ;
         return $req;
     }

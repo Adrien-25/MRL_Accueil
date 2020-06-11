@@ -3,12 +3,12 @@
  * @package MRLAccueil
  */
 
-namespace Inc\Pages;
+namespace Accueil\Pages;
 
-use \Inc\Base\BaseController;
-use \Inc\API\SettingsApi;
-use \Inc\API\Callbacks\AdminCallbacks;
-use \Inc\API\Callbacks\ManagerCallbacks;
+use \Accueil\Base\BaseController;
+use \Accueil\API\SettingsApi;
+use \Accueil\API\Callbacks\AdminCallbacks;
+use \Accueil\API\Callbacks\ManagerCallbacks;
 
 class Dashboard extends BaseController
 {

@@ -8,10 +8,26 @@
 }
 
 .auditeurs-col-3 {
-    -ms-flex: 0 0 40%;
-    flex: 0 0 40%;
-    max-width: 40%;
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+    max-width: 32%;
     font-size: 0.6vmax;
     text-align: center;
     position: relative;
+}
+
+#img1{
+    transform: translate(9%, -25%) rotate(-6deg);
+}
+
+#img2{
+    transform: translate(64%, -10%) rotate(6deg);
+}
+
+#img3{
+    transform: translate(110%, -10%);
+}
+
+#img4{
+    transform: translate(180%, -10%);
 }

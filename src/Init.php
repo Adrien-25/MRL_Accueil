@@ -3,7 +3,7 @@
  * @package MRLAccueil
  */
 
-namespace Inc;
+namespace Accueil;
 
 final class Init
 {
@@ -18,7 +18,7 @@ final class Init
             
             Pages\Dashboard::class,
             Base\Enqueue::class,
-            Base\SettingsLink::class,
+            // Base\SettingsLink::class,
             Base\SliderController::class,
             Base\VideoYoutubeController::class,
             Base\ParticipeEcouteController::class,

@@ -3,9 +3,9 @@
  * @package MRLAccueil
  */
 
-namespace Inc\Base;
+namespace Accueil\Base;
 
-use \Inc\Base\BaseController;
+use \Accueil\Base\BaseController;
 
 class Enqueue extends BaseController
 {
@@ -14,11 +14,16 @@ class Enqueue extends BaseController
         add_action( 'admin_enqueue_scripts', [ $this, 'enqueue' ] );//send the js and css
         add_action( 'wp_ajax_myprefix_get_image', 'myprefix_get_image'   );
         add_action( 'wp_enqueue_scripts', [$this, 'boutique_link']);
+        add_action( 'wp_enqueue_scripts', [$this, 'slider_link']);
     }
 
     function boutique_link(){
         wp_enqueue_script( 'mrlboutique', $this->plugin_url . 'assets/mrlboutique.js', '', '', true );
         wp_localize_script( 'mrlboutique', 'script_params', ['myPrefixLink' => get_option('myprefix_link')] );
+    }
+
+    function slider_link(){
+        wp_enqueue_script( 'mrlslider', $this->plugin_url . 'assets/mrlslider.js', '', '', true );
     }
 
     function enqueue(){

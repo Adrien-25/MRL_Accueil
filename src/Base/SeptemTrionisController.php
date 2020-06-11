@@ -3,11 +3,11 @@
  * @package MRLAccueil
  */
 
-namespace Inc\Base;
+namespace Accueil\Base;
 
-use \Inc\API\SettingsApi;
-use \Inc\Base\BaseController;
-use \Inc\API\Callbacks\AdminCallbacks;
+use \Accueil\API\SettingsApi;
+use \Accueil\Base\BaseController;
+use \Accueil\API\Callbacks\AdminCallbacks;
 
 class SeptemTrionisController extends BaseController
 {

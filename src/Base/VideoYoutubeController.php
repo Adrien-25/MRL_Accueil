@@ -3,13 +3,13 @@
  * @package MRLAccueil
  */
 
-namespace Inc\Base;
+namespace Accueil\Base;
 
-use \Inc\API\SettingsApi;
-use \Inc\Base\BaseController;
-use \Inc\API\Callbacks\AdminCallbacks;
+use \Accueil\API\SettingsApi;
+use \Accueil\Base\BaseController;
+use \Accueil\API\Callbacks\AdminCallbacks;
 
-class IllustrationController extends BaseController
+class VideoYoutubeController extends BaseController
 {
     public $settings;
     public $callbacks;
@@ -20,23 +20,23 @@ class IllustrationController extends BaseController
     public function register()
     {
         
-        if ( ! $this->activated( 'illustration_accueil' ) ) return;
+        if ( ! $this->activated( 'video_youtube_accueil' ) ) return;
 
         $this->callbacks = new AdminCallbacks;
         $this->settings = new SettingsApi;
         $this->setSubpages();
         $this->settings->addSubPages($this->subpages)->register();
 
-        add_shortcode( 'illustrations-front', [$this, 'illustrations_front'] );
+        add_shortcode( 'video-front', [$this, 'video_front'] );
     }
 
-    public function illustrations_front()
+    public function video_front()
     {
         ob_start();
 
-        echo "<link rel=\"stylesheet\"  href=\"$this->plugin_url/assets/mrlillustrations.css\"></link>";
+        echo "<link rel=\"stylesheet\"  href=\"$this->plugin_url/assets/mrlvideo.css\"></link>";
 
-        require_once( "$this->plugin_path/templates/illustrations-front.php" );
+        require_once( "$this->plugin_path/templates/video-front.php" );
 
         return ob_get_clean();
 
@@ -49,8 +49,8 @@ class IllustrationController extends BaseController
                 'page_title' => 'Video Youtube',
                 'menu_title' => 'Video Youtube',
                 'capability' => 'manage_options',
-                'menu_slug' => 'illustration_accueil',
-                'callback' => [$this->callbacks, 'adminIllustrations']
+                'menu_slug' => 'video_youtube',
+                'callback' => [$this->callbacks, 'adminVideo']
             ]
         ];
     }

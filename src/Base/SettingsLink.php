@@ -3,9 +3,9 @@
  * @package MRLAccueil
  */
 
-namespace Inc\Base;
+namespace Accueil\Base;
 
-use \Inc\Base\BaseController;
+use \Accueil\Base\BaseController;
 
 class SettingsLink extends BaseController
 {

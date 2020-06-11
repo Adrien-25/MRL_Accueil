@@ -1,6 +1,6 @@
 <?php 
 
-use \Inc\Base\DataBase;
+use \Accueil\Base\DataBase;
 $req = DataBase::dons_query();
 
 ?>

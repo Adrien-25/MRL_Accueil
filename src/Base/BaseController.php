@@ -3,7 +3,7 @@
  * @package MRLAccueil
  */
 
-namespace Inc\Base;
+namespace Accueil\Base;
 
 class BaseController
 {

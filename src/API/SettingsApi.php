@@ -3,7 +3,7 @@
  * @package MRLAccueil
  */
 
-namespace Inc\API;
+namespace Accueil\API;
 
 class SettingsApi
 {

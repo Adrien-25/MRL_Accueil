@@ -34,7 +34,7 @@ class CAAController extends BaseController
     {
         ob_start();
 
-        echo "<link rel=\"stylesheet\"  href=\"$this->plugin_url/assets/mrlcaa.css\"></link>";
+        echo "<link rel=\"stylesheet\"  href=\"$this->plugin_url/assets/css/mrlcaa.css\"></link>";
 
         require_once( "$this->plugin_path/templates/caa-front.php" );
 

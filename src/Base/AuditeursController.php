@@ -34,7 +34,7 @@ class AuditeursController extends BaseController
     {
         ob_start();
 
-        echo "<link rel=\"stylesheet\"  href=\"$this->plugin_url/assets/mrlauditeurs.css\"></link>";
+        echo "<link rel=\"stylesheet\"  href=\"$this->plugin_url/assets/css/mrlauditeurs.css\"></link>";
 
         require_once( "$this->plugin_path/templates/auditeurs-front.php" );
 

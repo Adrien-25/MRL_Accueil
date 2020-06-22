@@ -35,7 +35,7 @@ class DonsController extends BaseController
 
         ob_start();
         
-        echo "<link rel=\"stylesheet\"  href=\"$this->plugin_url/assets/mrldons.css\"></link>";
+        echo "<link rel=\"stylesheet\"  href=\"$this->plugin_url/assets/css/mrldons.css\"></link>";
 
         require_once( "$this->plugin_path/templates/dons-front.php" );
 

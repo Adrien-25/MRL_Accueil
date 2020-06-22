@@ -34,7 +34,7 @@ class MaurcieBougeotteController extends BaseController
     {
         ob_start();
 
-        echo "<link rel=\"stylesheet\"  href=\"$this->plugin_url/assets/mrlbougeotte.css\"></link>";
+        echo "<link rel=\"stylesheet\"  href=\"$this->plugin_url/assets/css/mrlbougeotte.css\"></link>";
 
         require_once( "$this->plugin_path/templates/bougeotte-front.php" );
 

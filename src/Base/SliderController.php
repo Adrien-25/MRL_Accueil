@@ -34,9 +34,11 @@ class SliderController extends BaseController
     {
         ob_start();
     
-        echo "<link rel=\"stylesheet\"  href=\"$this->plugin_url/assets/mrlslider.css\"></link>";
+        echo "<link rel=\"stylesheet\"  href=\"$this->plugin_url/assets/css/mrlslider.css\"></link>";
 
         require_once( "$this->plugin_path/templates/slider-front.php" );
+
+        echo "<script src=\"$this->plugin_url/assets/js/mrlslider.js\"></script>";
 
         return ob_get_clean();
 

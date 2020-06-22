@@ -34,7 +34,7 @@ class TetaisLaController extends BaseController
     {
         ob_start();
 
-        echo "<link rel=\"stylesheet\"  href=\"$this->plugin_url/assets/mrltetaisla.css\"></link>";
+        echo "<link rel=\"stylesheet\"  href=\"$this->plugin_url/assets/css/mrltetaisla.css\"></link>";
 
         require_once( "$this->plugin_path/templates/tetaisla-front.php" );
 

@@ -20,7 +20,7 @@ $default_img_url = [
         <img src="<?= plugin_dir_url( dirname( __FILE__) ).'assets/Images/Boutique/Boutique_jp.jpg'?>" alt="BEST OF 1">
     <div class="row">
     <?php for ($i = 0; $i < count($item); $i++):?>
-        <div id="<?= $item[0] ?>" class="col-3">
+        <div id="<?= $item[$i] ?>" class="col-3">
             <div>
                 <?php if ( $image ):?>
                     <?= wp_get_attachment_image($image[$i], 'medium', false, [ 'id' => 'myprefix-preview-image'] )?>

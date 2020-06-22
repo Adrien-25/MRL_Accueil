@@ -18,17 +18,17 @@ class Enqueue extends BaseController
     }
 
     function boutique_link(){
-        wp_enqueue_script( 'mrlboutique', $this->plugin_url . 'assets/mrlboutique.js', '', '', true );
+        wp_enqueue_script( 'mrlboutique', $this->plugin_url . 'assets/js/mrlboutique.js', '', '', true );
         wp_localize_script( 'mrlboutique', 'script_params', ['myPrefixLink' => get_option('myprefix_link')] );
     }
 
     function slider_link(){
-        wp_enqueue_script( 'mrlslider', $this->plugin_url . 'assets/mrlslider.js', '', '', true );
+        wp_enqueue_script( 'mrlslider', $this->plugin_url . 'assets/js/mrlslider.js', '', '', true );
     }
 
     function enqueue(){
-        wp_enqueue_style('mrlstyle', $this->plugin_url . 'assets/mrlstyle.css', __FILE__ );
-        wp_enqueue_script('script', $this->plugin_url . 'assets/script.js', __FILE__ );
+        wp_enqueue_style('mrlstyle', $this->plugin_url . 'assets/css/mrlstyle.css', __FILE__ );
+        wp_enqueue_script('script', $this->plugin_url . 'assets/js/script.js', __FILE__ );
         wp_enqueue_script( 'media-upload' );
         wp_enqueue_media();
         wp_localize_script( 'script', 'script_params', ['myPrefixLink' => get_option('myprefix_link')] );

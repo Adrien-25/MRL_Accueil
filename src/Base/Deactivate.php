@@ -3,7 +3,7 @@
  * @package MRLAccueil
  */
 
-namespace Accueil\Accueil\Base;
+namespace Accueil\Base;
 
 class Deactivate
 {

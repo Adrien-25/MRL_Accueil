@@ -10,7 +10,9 @@ Version: 1.0.0
 Author: Axel
 */
 
-use Accueil\Accueil\Base;
+use Accueil\Base;
+use Accueil\Base\Activate;
+use Accueil\Base\Deactivate;
 
 //check si le plugin est utilisé par wordpress
 if( ! defined('ABSPATH') ){

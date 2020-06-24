@@ -1,8 +1,8 @@
 <?php
 return [
-    'dsn' => 'mysql:host=localhost;dbname=wordpress4',
+    'dsn' => 'mysql:host=localhost;dbname=BddDevFusionMrl',
     'user' => 'root',
-    'password' => 'toto'
+    'password' => 'root'
 ];
 
 // return [

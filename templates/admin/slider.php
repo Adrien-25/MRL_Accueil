@@ -1,4 +1,4 @@
-<?php require_once "slidesK/slider-front-class.php" ?>
+<?php require_once __DIR__."/../slidesK/slider-front-class.php" ?>
 
 
 <?php
@@ -54,14 +54,14 @@ if (isset($_FILES["image"]) AND $_FILES["image"]['error'] == 0)
         </div>
      </form>
 <?php
-if((isset($_POST['title'])) && (isset($_POST['link'])) && (isset($_POST['link']))){
-    echo "<div style=\"float:left\">
-    <div style=\"border:1px solid; margin:5px\">
+if((isset($_POST['title'])) && (isset($_POST['link'])) && (isset($_FILES["image"]['name']))){
+    echo '<div style="float:left">
+    <div style="border:1px solid; margin:5px">
     <span>X</span>
-    <p><b>titre du slider : </b>".$_POST['title']."
-    <p><b>lien du slider : </b>".$_POST['link']."
-    <p><img style=\"width: 300px\" src=".WP_CONTENT_URL."/uploads/2020/06/".basename($_FILES["image"]['name']).">
+    <p><b>titre du slider : </b>'.$_POST['title'].'
+    <p><b>lien du slider : </b>'.$_POST['link'].'
+    <p><img style="width: 300px" src="'.WP_CONTENT_URL."/uploads/2020/06/".basename($_FILES["image"]['name']).'">
     </p>
-    </div>";
+    </div>';
 }
 ?>

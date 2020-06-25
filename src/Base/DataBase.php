@@ -6,6 +6,7 @@
 namespace Accueil\Base;
 
 Use PDO;
+Use exception;
 
 class DataBase
 {  

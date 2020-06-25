@@ -57,3 +57,4 @@ class SliderController extends BaseController
         ];
     }
 }
+

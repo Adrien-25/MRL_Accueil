@@ -1,4 +1,6 @@
-<?php require_once "slidesK/slider-front-class.php" ?>
+<?php 
+ 
+require_once "slidesK/slider-front-class.php" ?>
 
 <div class="slideshow-container">
 

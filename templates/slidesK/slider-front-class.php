@@ -1,5 +1,6 @@
 <?php 
 
+
 class Slide{
 
   public $title;
@@ -15,8 +16,8 @@ class Slide{
   }
 }
 
-$slide1 = new Slide("Best-of", "https://www.google.com/", "assets/Images/Slider/Slide_CAA_Best_Off_02.jpg");
-$slide2 = new Slide("Application", "https://www.facebook.com/", "assets/Images/Slider/Slide_Appli_02.jpg");
+// $slide1 = new Slide("Best-of", "https://www.google.com/", "assets/Images/Slider/Slide_CAA_Best_Off_02.jpg");
+// $slide2 = new Slide("Application", "https://www.facebook.com/", "assets/Images/Slider/Slide_Appli_02.jpg");
 
 
 class SlideManager{
@@ -31,7 +32,7 @@ class SlideManager{
       return $this->slides;
   }
 }
-$slideManager = new SlideManager; 
-$slideManager->addSlide($slide1); 
-$slideManager->addSlide($slide2);
+// $slideManager = new SlideManager; 
+// $slideManager->addSlide($slide1); 
+// $slideManager->addSlide($slide2);
 ?>

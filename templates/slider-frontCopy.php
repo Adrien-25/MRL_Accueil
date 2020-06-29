@@ -1,18 +1,29 @@
+<?php 
+ 
+require_once "slidesK/slider-front-class.php" ;
 
-<div id = "slider_Accueil" class="slideshow-container">
+?>
+
+
+
+
+
+<div class="slideshow-container">
 
 <?php 
-global $wpdb;
-$results = $wpdb->get_results("SELECT * FROM ".$wpdb->prefix."slide_list");
 
-foreach ($results as $slide): 
+$slideIns = $slideManager->getSlides();
+
+foreach ($slideIns as $slidess): 
+    $slidess;
 ?>
 
 <div class="mySlides fade">
-  <a href="<?= $slide->slide_link;?>">
-  <img src="<?= $slide->slide_image; ?>">
+  <a href="<?= $slidess->link;?>">
+  <img src="<?= plugin_dir_url( dirname( __FILE__) ). $slidess->image; ?>">
   </a>
 </div>
+
 <?php endforeach ?>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

@@ -10,7 +10,6 @@ use \Accueil\Base\BaseController;
 class ManagerCallbacks extends BaseController
 {
     public function checkboxSanitize( $input ){
-        //crée un array output
         $output = [];
 
         /*Pour chaque éléments de l'array $managers_admin,

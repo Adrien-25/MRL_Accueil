@@ -19,6 +19,7 @@ class Dashboard extends BaseController
     public $callbacks;
     public $callbacks_mngr;
 
+    //On entre les informations lié à la page principal dans le tableau de bord
     public function setPages(){
         $this->pages = [
             [

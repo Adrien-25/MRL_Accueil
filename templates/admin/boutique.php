@@ -43,7 +43,7 @@
     $image_saved = [];
 
     for ($i = 0; $i < count($database_rows); $i++) {
-        if ( intval( $image_id ) > 0 ) {
+        if ( intval( $image_id[$i] ) > 0 ) {
             //Equivalent d'une balise <img> en HTML
             $image_saved[] = wp_get_attachment_image($image_id[$i], 'medium', false, [ 'id' => 'myprefix-preview-image'] );
         }else {

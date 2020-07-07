@@ -5,9 +5,9 @@
 
 /*
 Plugin Name: MRL Accueil
-Description: Test for create a plugin.
+Description: Gestion de la page d'accueil.
 Version: 1.0.0
-Author: Axel
+Author: MRL
 */
 
 use Accueil\Base;

@@ -1,4 +1,10 @@
 <?php
+// return [
+//     'dsn' => 'mysql:host=localhost;dbname=BddDevFusionMrl',
+//     'user' => 'root',
+//     'password' => 'root'
+// ];
+
 return [
     'dsn' => 'mysql:host=localhost;dbname=wordpress4',
     'user' => 'root',

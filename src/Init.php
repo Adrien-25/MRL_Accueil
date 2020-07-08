@@ -8,7 +8,8 @@ namespace Accueil;
 final class Init
 {
     /**
-     * Store all the classes inside an array
+     * Enregistre toutes les class dont on a besoin lors de l'initialisation du plugin
+     * 
      * @return array Full list of classes
      */
 
@@ -35,8 +36,8 @@ final class Init
     }
 
     /**
-     * Loop through the classes, initialize them,
-     * and call the register() method if it exists
+     * On check s'ils ont une class register() et on l'active s'ils en ont une
+     * Chaque contrôleur vont avoir une fonction register et c'est à partir de cette fonction que l'ont va activer toute les autres fonctions de chaques classes
      * @return
      */
 
@@ -51,9 +52,9 @@ final class Init
     }
 
     /**
-     * Initialise the classe
-     * @param class $class  class from the services array
-     * @return class instance new instance of the class
+     * Initialise les class
+     * @param class $class  class venant de l'array $service
+     * @return class On instancie chaques classes stocké dans l'array $service
      */
 
 

@@ -24,6 +24,8 @@ class SettingsApi
         }
     }
 
+    /*On récupère l'array concernant la page principal du tableau de bord.
+    Cet array est recupéré depuis Dashboard.php dans la fonction setPages.*/
     public function addPages( array $pages )
     {
         $this->admin_pages = $pages;
@@ -31,6 +33,8 @@ class SettingsApi
         return $this;
     }
 
+    /*On récupère les arrays contenant les infos sur les sous-pages et on les y insère dans admin_subpages
+    Ces arrays sont dans chaque controlleur correspondant à une sous pages possédant une fonction setSubpages()*/
     public function addSubpages( array $pages )
     {
         $this->admin_subpages = array_merge( $this->admin_subpages, $pages);
@@ -57,7 +61,8 @@ class SettingsApi
     }
 
 
-
+    /*Sert juste à changer le nom de la premère sous-page lié à la page principal
+    On entre le nom dans Dashboard.php dans la fonction register()*/
     public function subPage( string $title = null )
     {
         if ( empty( $this->admin_pages) ) {
@@ -84,10 +89,14 @@ class SettingsApi
 
     public function addAdminMenu()
     {
+        /*On récupère les infos correspondant à chaques pages représenté par des arrays dans l'array admin_subpages.
+        Puis on créé une page dans le tableau de bord par array dans admin_pages */
         foreach ( $this->admin_pages as $page ) {
             add_menu_page( $page['page_title'], $page['menu_title'], $page['capability'], $page['menu_slug'], $page['callback'], $page['icon_url'], $page['position'] );
         }
 
+        /*On récupère les infos correspondant à chaques sous-pages représenté par des arrays dans l'array admin_subpages.
+        Puis on créé une sous-page dans le tableau de bord par array dans admin_subpages */
         foreach ( $this->admin_subpages as $page ) {
             add_submenu_page( $page['parent_slug'], $page['page_title'], $page['menu_title'], $page['capability'], $page['menu_slug'], $page['callback'] );
         }

@@ -2,8 +2,8 @@
 /**
  * @package MRLAccueil
  * 
- * On récupère les différent templates correspondant aux sous-pages du menu MRL Accueil
- * dans le Dashboard
+ * Ici on a tous les callbacks appelé dans les fichiers contrôleur du dossier Base, représentant des pages et/ou sous pages affiché dans le tableau de bord.
+ * Chaque fonction reprèsente un template correspondant aux pages/sous-pages lié au tableau de bord.
  */
 
 namespace Accueil\API\Callbacks;
@@ -12,7 +12,6 @@ use \Accueil\Base\BaseController;
 
 class AdminCallbacks extends BaseController
 {
-    //Récupération de l'accueil
     public function adminDashboard(){
         return require_once( "$this->plugin_path/templates/admin/admin.php");
     }

@@ -2,7 +2,7 @@
 return [
     'dsn' => 'mysql:host=localhost;dbname=BddDevFusionMrl',
     'user' => 'root',
-    'password' => 'root'
+    'password' => ''
 ];
 
 // return [

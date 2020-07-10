@@ -105,5 +105,3 @@ jQuery(document).ready( function($) {
 
 
 });
-
-

@@ -1,15 +1,23 @@
 <?php
+
 // return [
 //     'dsn' => 'mysql:host=localhost;dbname=BddDevFusionMrl',
 //     'user' => 'root',
-//     'password' => 'root'
+//     'password' => ''
 // ];
 
+
 return [
-    'dsn' => 'mysql:host=localhost;dbname=wordpress4',
+    'dsn' => 'mysql:host=localhost;dbname=BddDevFusionMrl',
     'user' => 'root',
-    'password' => 'toto'
+    'password' => ''
 ];
+
+// return [
+//     'dsn' => 'mysql:host=localhost;dbname=wordpress4',
+//     'user' => 'root',
+//     'password' => 'toto'
+// ];
 
 // return [
 //     'dsn' => 'mysql:host=pm47181-001.privatesql:35102;dbname=BddDevFusionMrl',

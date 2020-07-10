@@ -3,8 +3,8 @@
 <div id="slider_Accueil" class="slideshow-container">
 
   <?php
-
-  foreach (display_front($_GET['page_id']) as $slide) :
+   global $post;
+  foreach (display_front($post->ID) as $slide) :
   ?>
 
     <div class="mySlides fade">
@@ -20,7 +20,7 @@
 </div>
 <div style="text-align:center">
   <?php
-  for ($i = 0; $i < count_dot($_GET['page_id']); $i++) : ?>
+  for ($i = 0; $i < count_dot($post->ID); $i++) : ?>
     <span class="dot" onclick="currentSlide($i)"></span>
   <?php endfor ?>
 </div>

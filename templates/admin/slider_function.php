@@ -144,6 +144,7 @@ function slide_delete($slide_id){
 }
 
 ///Front
+
 function display_front($current_page){
         global $wpdb;
         $result = $wpdb->get_results(

@@ -4,8 +4,6 @@
 
   <?php
 
-  ///////
-
   foreach (display_front($_GET['page_id']) as $slide) :
   ?>
 
@@ -21,10 +19,8 @@
 
 </div>
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
+  <?php
+  for ($i = 0; $i < count_dot($_GET['page_id']); $i++) : ?>
+    <span class="dot" onclick="currentSlide($i)"></span>
+  <?php endfor ?>
 </div>
-
-<?php
-
-?>

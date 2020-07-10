@@ -10,7 +10,6 @@ function create_table_sliders(){
         $sql2 = "CREATE TABLE IF NOT EXISTS $table_sliders 
         (
             `id` INT NOT NULL AUTO_INCREMENT,
-            
             `posts_id` BIGINT(20) UNSIGNED NOT NULL,
             PRIMARY KEY (`id`),
             INDEX `fk_sliders_posts_idx` (`posts_id` ASC),
@@ -145,7 +144,6 @@ function slide_delete($slide_id){
 }
 
 ///Front
-
 function display_front($current_page){
         global $wpdb;
         $result = $wpdb->get_results(
@@ -157,3 +155,15 @@ function display_front($current_page){
         );
         return $result;
       }
+
+function count_dot($current_page){
+        global $wpdb;
+        $count_slides = $wpdb->get_var(
+                "SELECT COUNT(*) 
+                FROM mrl_slides
+                JOIN mrl_sliders 
+                ON mrl_slides.sliders_id = mrl_sliders.id 
+                where mrl_sliders.posts_id = $current_page"
+        );
+        return $count_slides;
+}

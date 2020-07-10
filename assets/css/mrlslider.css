@@ -5,6 +5,8 @@ body {
 }
 .mySlides {
   display: none;
+  overflow: hidden;
+  
 }
 img {
   vertical-align: middle;
@@ -14,7 +16,7 @@ img {
 .slideshow-container {
   max-height: 316.66px;
   max-width: 1200px;
-  overflow: auto;
+  overflow: hidden;
   position: relative;
   margin: auto;
 }

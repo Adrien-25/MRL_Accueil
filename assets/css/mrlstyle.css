@@ -60,3 +60,78 @@
 .boutique-save{
     margin:15px;
 }
+
+
+
+/* SLIDER */
+#slider-body{
+background-color: rgb(221, 220, 220);
+}
+#slider-body h2{
+    font-size: x-large;
+}
+#slider-body p{
+    font-size: medium;
+}
+
+#slider-body legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+#form_add {
+    width: 50%;
+    margin: 20px auto 10px 20px;
+
+}
+#form_add label{
+    display: inline-block;
+    width: 150px;
+}
+
+#form_delete{
+    text-align: center;
+}
+.slider-input{
+    width:100px;
+    line-height:20px;
+    background-color:  rgba(233, 2, 2, 0.678);
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+}
+.slider-input:hover{
+    background-color:  rgb(255, 0, 0);
+}
+.slider-input-delete{
+    width: auto;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+.slider-display{
+    display: inline-block;
+    border:3px solid black;
+    margin:10px 5px;
+    height:300px;
+    width:30%;
+    overflow:hidden;
+    position:relative;
+    box-shadow: 4px 4px 4px 0px rgba(204, 10, 10, 0.815);
+    text-align: center;
+    padding: 0 5px 0 5px;
+}
+.slider-display p{
+    vertical-align: top;
+    padding:5px 5px;
+    margin: 0px;
+}
+.slider-display button{
+    text-align: center;
+}
+
+.slider-image{
+    width: 100%;
+    max-height: 50%;
+}
+
